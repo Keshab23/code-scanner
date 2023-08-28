@@ -9,5 +9,10 @@ int main()
     gets(buf);
     fgets(buf, MAX, stdin);
     printf("%s", buf);
+
+    char str[5];
+    sprintf(str, "%s", "Buffer Overflow");
+    printf("%s", str);
+
     return 0;
 }
