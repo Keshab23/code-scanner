@@ -12,8 +12,6 @@
 name: "CodeQL"
 
 on:
-  push:
-    branches: [ "main", "dev" ]
   pull_request:
     # The branches below must be a subset of the branches above
     branches: [ "main", "dev" ]
@@ -63,7 +61,6 @@ jobs:
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Build
       run: |
-          gcc main.c
           gcc src/main.c
 
     # ℹ️ Command-line programs to run using the OS shell.
